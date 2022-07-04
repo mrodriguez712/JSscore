@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!--HOME AND GUEST TEXT-->
+        <div class="container">
+            <div class="title">
+                <h3 class="title-el">HOME</h3>
+            </div>
+            <div class="title">
+                <h3 class="title-el">GUEST</h3>
+            </div>
+        </div>
+        <!--HOME AND GUEST POINTS-->
+        <div class="container">
+            <div class="pts-bg">
+                <p id="home-score">0</p>
+            </div>
+            <div class="pts-bg">
+                <p id="guest-score">0</p>
+            </div>
+        </div>
+        <!--Add POINTS FOR HOME AND GUEST-->
+        <div class="container">
+            <div>
+                <button class="add-pts" onclick="addhome1()">+1</button>
+                <button class="add-pts" onclick="addhome2()">+2</button>
+                <button class="add-pts" onclick="addhome3()">+3</button>
+            </div>
+            <div>
+                <button class="add-pts" onclick="addguest1()">+1</button>
+                <button class="add-pts" onclick="addguest2()">+2</button>
+                <button class="add-pts" onclick="addguest3()">+3</button>
+            </div>
+        </div>
+        <!--NEW GAME-->
+        <div class="container">
+                <button id="nw-game" onclick="restart()">NEW GAME</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
